@@ -1,4 +1,4 @@
-import model
+import model # Модуль меню базы данных
 
 def list_menu():
     global input_id_employee

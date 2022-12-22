@@ -1,3 +1,4 @@
+# Модуль функций базы данных
 import csv
 from csv import writer
 from re import search
@@ -99,9 +100,9 @@ def delete_line():  # удаление данных о сотруднике по
         new_rows = []
         data = csv.reader(inp)
         for line in data:
-            if (int(line[0]) != selectedId):  # в новый список добавила все строки, не равно id
+            if (int(line[0]) != selectedId):  # Добавление в новый список всех строк, не равных id
                 new_rows.append(line)
-    # записала эти строки в файл заново полностью
+    # Запись строк в файл заново
     with open('data.csv', 'w', newline='') as out:
         csv_writer = writer(out)
         for line in new_rows:
