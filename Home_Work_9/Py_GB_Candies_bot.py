@@ -5,7 +5,7 @@ import telebot
 from random import randint
 from random import choice
 
-bot = telebot.TeleBot("5847853376:AAHEF1hShc07jI4NfgwCvfGULVq1poUZato")
+bot = telebot.TeleBot("token was removed after the security alert of GitGuardian")
 candies = dict()
 enable_game = dict()
 turn = dict()
